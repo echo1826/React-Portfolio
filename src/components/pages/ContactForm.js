@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ContactForm.css"
 
-function ContactForm(props) {
+function ContactForm() {
     return(
         <div className="container">
             <h2>Contact Me</h2>
