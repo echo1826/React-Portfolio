@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navigation() {
+function Navigation(props) {
     
 
     return(
@@ -11,13 +11,13 @@ function Navigation() {
             <nav>
                 <ul>
                     <li>
-                        About Me
+                        <a href="#home" onClick={() => props.handlePageChange("About Me")}>About Me</a>
                     </li>
                     <li>
-                        Projects
+                        <a href="#projects" onClick={() => props.handlePageChange("Projects")}>Projects</a>
                     </li>
                     <li>
-                        Contact Me
+                        <a href="#contactme" onClick={() => props.handlePageChange("Contact Me")}>Contact</a>
                     </li>
                 </ul>
             </nav>
