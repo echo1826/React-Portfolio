@@ -1,15 +1,16 @@
 import React from "react";
+import "./styles/Footer.css";
 
 function Footer() {
     return(
-        <footer>
+        <footer style={{marginTop: 20}}>
             <nav>
-                <ul>
+                <ul className="footerNavbar">
                     <li>
-                        <a href="https://github.com/echo1826">Github</a>
+                        <a className="footerLink" href="https://github.com/echo1826" target="_blank"><i class="fab fa-github fa-5x"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/ethan-cho-51a138221/">LinkedIn</a>
+                        <a className="footerLink" href="https://www.linkedin.com/in/ethan-cho-51a138221/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
                     </li>
                 </ul>
             </nav>
