@@ -1,0 +1,10 @@
+.footerNavbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: black;
+}
