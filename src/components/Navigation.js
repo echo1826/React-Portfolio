@@ -20,6 +20,9 @@ function Navigation(props) {
                     <li className="btn black">
                         <a className="linkDecoration" href="#contactme" onClick={() => props.handlePageChange("Contact Me")}>Contact</a>
                     </li>
+                    <li className="btn black">
+                        <a className="linkDecoration" href="#contactme" onClick={() => props.handlePageChange("Resume")}>Resume</a>
+                    </li>
                 </ul>
             </nav>
         </div>
