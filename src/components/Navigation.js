@@ -6,7 +6,7 @@ function Navigation(props) {
 
     return(
         <div className="header">
-            <h1 className="">
+            <h1 style={{color: "#3A506B"}}>
                 Ethan Cho
             </h1>
             <nav>
@@ -21,7 +21,7 @@ function Navigation(props) {
                         <a className="linkDecoration" href="#contactme" onClick={() => props.handlePageChange("Contact Me")}>Contact</a>
                     </li>
                     <li className="btn black spaceOut">
-                        <a className="linkDecoration" href="#">Resume</a>
+                        <a className="linkDecoration" href="#resume">Resume</a>
                     </li>
                 </ul>
             </nav>
