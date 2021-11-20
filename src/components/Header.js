@@ -24,14 +24,14 @@ function Header() {
                     image: "./images/tech-blog.png",
                     stack: "Handlebars, express.js, node.js",
                     repo: "https://github.com/echo1826/Tech-Blog",
-                    deloyed: ""
+                    deployed: "https://tech-blog-ec.herokuapp.com/"
                 };
                 const projectTwo = {
                     title: "Express.gym",
                     image: "../images/express-gym.png",
                     stack: "Handlebars, express.js, node.js",
                     repo: "https://github.com/nicoledodge/express.gym",
-                    deployed: ""
+                    deployed: "https://express-gym.herokuapp.com/"
                 };
                 const projectThree = {
                     title: "Mafia Employee Tracker backend",
@@ -45,21 +45,21 @@ function Header() {
                     image: "./images/wildfire-tracker.PNG",
                     stack: "HTML, CSS, JavaScript",
                     repo: "https://github.com/chuck2076/Weather_Wildfire_App",
-                    deployed: ""
+                    deployed: "https://chuck2076.github.io/Weather_Wildfire_App/"
                 };
                 const projectFive = {
                     title: "Fitness Tracker",
                     image: "./images/fitness-tracker.PNG",
                     stack: "mongoDB, node.js, express.js",
                     repo: "https://github.com/echo1826/Fitness-Tracker",
-                    deployed: ""
+                    deployed: "https://ec-fitness-tracker.herokuapp.com/?id=6192c8bdb3399b7d14624dbc"
                 };
                 const projectSix = {
                     title: "Weather Tracker",
                     image: "./images/weather-app.png",
                     stack: "HTML, CSS, JavaScript",
                     repo: "https://github.com/echo1826/Weather-Checker",
-                    deployed: ""
+                    deployed: "https://echo1826.github.io/Weather-Checker/"
                 };
                 return(
                     <ul className="card-wrapper">
