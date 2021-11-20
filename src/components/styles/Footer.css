@@ -9,6 +9,10 @@
     color: black;
 }
 
+.footerIcon {
+    color: #59656F;
+}
+
 .footerIcon:hover {
-    color: #778DA9;
+    color: #6FFFE9
 }
