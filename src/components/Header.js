@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 import ContactForm from "./pages/ContactForm";
 import AboutMe from "./pages/AboutMe";
+import "./styles/Header.css"
 
 
 function Header() {
@@ -20,42 +21,48 @@ function Header() {
                 // pass props that give the project data, title, image, technologies used?
                 const projectOne = {
                     title: "Tech Blog",
-                    image: "",
+                    image: "./images/tech-blog.png",
                     stack: "Handlebars, express.js, node.js",
-                    repo: "https://github.com/echo1826/Tech-Blog"
+                    repo: "https://github.com/echo1826/Tech-Blog",
+                    deloyed: ""
                 };
                 const projectTwo = {
                     title: "Express.gym",
-                    image: "",
+                    image: "../images/express-gym.png",
                     stack: "Handlebars, express.js, node.js",
-                    repo: "https://github.com/nicoledodge/express.gym"
+                    repo: "https://github.com/nicoledodge/express.gym",
+                    deployed: ""
                 };
                 const projectThree = {
                     title: "Mafia Employee Tracker backend",
-                    image: "",
+                    image: "./images/mafia-tracker.PNG",
                     stack: "mySQL, node.js, express.js",
-                    repo: 'https://github.com/echo1826/Mafia-Employee-Tracker'
+                    repo: 'https://github.com/echo1826/Mafia-Employee-Tracker',
+                    deployed: "#"
                 };
                 const projectFour = {
                     title: "National Parks Wildfire Tracker",
-                    image: "",
+                    image: "./images/wildfire-tracker.PNG",
                     stack: "HTML, CSS, JavaScript",
-                    repo: "https://github.com/chuck2076/Weather_Wildfire_App"
+                    repo: "https://github.com/chuck2076/Weather_Wildfire_App",
+                    deployed: ""
                 };
                 const projectFive = {
                     title: "Fitness Tracker",
-                    image: "",
+                    image: "./images/fitness-tracker.PNG",
                     stack: "mongoDB, node.js, express.js",
-                    repo: "https://github.com/echo1826/Fitness-Tracker"
+                    repo: "https://github.com/echo1826/Fitness-Tracker",
+                    deployed: ""
                 };
                 const projectSix = {
                     title: "Weather Tracker",
-                    image: "",
+                    image: "./images/weather-app.png",
                     stack: "HTML, CSS, JavaScript",
-                    repo: "https://github.com/echo1826/Weather-Checker"
+                    repo: "https://github.com/echo1826/Weather-Checker",
+                    deployed: ""
                 };
                 return(
-                    <ul style={{listStyle: "none"}}>
+                    <ul className="card-wrapper">
                         <Project project={projectOne}/>
                         <Project project={projectTwo}/>
                         <Project project={projectThree}/>
