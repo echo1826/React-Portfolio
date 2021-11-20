@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/ContactForm.css"
+import "../styles/ContactForm.css";
+import {validateEmail} from "../utils/helpers";
 
 function ContactForm() {
     const [email, setEmail] = useState("");
@@ -27,8 +28,8 @@ function ContactForm() {
             console.log("error message firing");
             setErrorMessage("Name field is required!");
             return;
-        }else if(!email) {
-            setErrorMessage("Email field is required!");
+        }else if(!validateEmail(email)) {
+            setErrorMessage("Invalid email submitted!");
             return;
         }else if(!message) {
             setErrorMessage("Message field is required!");
