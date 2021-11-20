@@ -1,0 +1,28 @@
+:root {
+    --card-gradient: #5e9ad9, #e271ad;
+    --card-blend-mode: overlay;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    overflow: hidden;
+    width: 40vh;
+    height: 300px;
+}
+
+.image {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    /* aspect-ratio: 4/3; */
+    mix-blend-mode: var(--card-blend-mode);
+    opacity: .5;
+}
+
+.image:hover {
+    opacity: 1;
+}
