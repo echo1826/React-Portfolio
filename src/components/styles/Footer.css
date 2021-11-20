@@ -8,3 +8,7 @@
     text-decoration: none;
     color: black;
 }
+
+.footerIcon:hover {
+    color: #778DA9;
+}

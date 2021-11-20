@@ -8,7 +8,7 @@ function AboutMe() {
             {/* profile pic goes here */}
             <article className="article">
                 <p>
-                    Hi, my name is Ethan Cho and I am currently a web developer in training at the UT Coding Bootcamp. My many hobbies that I enjoy during my free time includes tennis, reading, listening to K-pop, keyboard building, and computer building. I'm proficient in JavaScript with some basic knowledge of C++. The technologies I'm proficient at are react.js, node.js, express.js, bootstrap, mySQL, mongoDB, sequelize, and mongoose.
+                    Hi, my name is Ethan Cho and I am currently a web developer in training at the UT Coding Bootcamp. Hobbies that I enjoy during my free time includes tennis, reading, listening to K-pop, keyboard building, and computer building. I am proficient in JavaScript with some basic knowledge of C++. The technologies I am proficient in are react.js, node.js, express.js, bootstrap, mySQL, mongoDB, sequelize, and mongoose.
                 </p>
                 <br/>
                 <p>

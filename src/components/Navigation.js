@@ -21,7 +21,7 @@ function Navigation(props) {
                         <a className="linkDecoration" href="#contactme" onClick={() => props.handlePageChange("Contact Me")}>Contact</a>
                     </li>
                     <li className="btn black spaceOut">
-                        <a className="linkDecoration" href="#contactme" onClick={() => props.handlePageChange("Resume")}>Resume</a>
+                        <a className="linkDecoration" href="#">Resume</a>
                     </li>
                 </ul>
             </nav>
