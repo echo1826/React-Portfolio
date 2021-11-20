@@ -3,7 +3,7 @@ import "./styles/Footer.css";
 
 function Footer() {
     return(
-        <footer style={{marginTop: 20}}>
+        <footer style={{marginTop: 40}}>
             <nav>
                 <ul className="footerNavbar">
                     <li>
@@ -11,6 +11,9 @@ function Footer() {
                     </li>
                     <li>
                         <a className="footerLink" href="https://www.linkedin.com/in/ethan-cho-51a138221/" target="_blank"><i className="fab fa-linkedin fa-5x footerIcon"></i></a>
+                    </li>
+                    <li>
+                        <a className="footerLink" href="https://stackoverflow.com/users/17466878/ephexs" target="_blank"><i className="fab fa-stack-overflow fa-5x footerIcon"></i></a>
                     </li>
                 </ul>
             </nav>
