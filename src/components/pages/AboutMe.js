@@ -1,9 +1,25 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../styles/AboutMe.css";
+import API from "../utils/API";
 
 function AboutMe() {
+    const [gif, setGif] = useState({})
+
+    const searchGif = (query) => {
+        API.search(query).then((res) => {setGif(res)}).catch((err) => console.log(err));
+    }
+
+    useEffect(()=> {
+        searchGif('kittens');
+    }, []);
+
+    // console.log(gif);
+    let { data } = gif;
+    console.log(data);
+
     return(
         <div className="backgroundColor">
+            <img />
             <h2 className="title">About Me</h2>
             {/* profile pic goes here */}
             <article className="article">
