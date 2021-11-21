@@ -50,14 +50,14 @@ function Header() {
                 const projectFive = {
                     title: "Fitness Tracker",
                     image: "./images/fitness-tracker.PNG",
-                    stack: "mongoDB, node.js, express.js",
+                    stack: "HTML, mongoDB, node.js, express.js",
                     repo: "https://github.com/echo1826/Fitness-Tracker",
                     deployed: "https://ec-fitness-tracker.herokuapp.com/?id=6192c8bdb3399b7d14624dbc"
                 };
                 const projectSix = {
                     title: "Weather Tracker",
                     image: "./images/weather-app.png",
-                    stack: "HTML, CSS, JavaScript",
+                    stack: "HTML, CSS, JavaScript, jQuery",
                     repo: "https://github.com/echo1826/Weather-Checker",
                     deployed: "https://echo1826.github.io/Weather-Checker/"
                 };

@@ -3,7 +3,7 @@ import "./styles/Footer.css";
 
 function Footer() {
     return(
-        <footer style={{marginTop: 40}}>
+        <footer style={{margin: 40}}>
             <nav>
                 <ul className="footerNavbar">
                     <li>
