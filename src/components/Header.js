@@ -12,7 +12,7 @@ function Header() {
     const [currentPage, setCurrentPage] = useState("About Me");
     
     const handlePageRender = () => {
-        console.log(currentPage);
+        // console.log(currentPage);
         switch(currentPage) {
             case "About Me": {
                 return(<AboutMe />);
@@ -22,14 +22,14 @@ function Header() {
                 const projectOne = {
                     title: "Tech Blog",
                     image: "./images/tech-blog.png",
-                    stack: "Handlebars, express.js, node.js",
+                    stack: "Handlebars, express.js, node.js, sequelize",
                     repo: "https://github.com/echo1826/Tech-Blog",
                     deployed: "https://tech-blog-ec.herokuapp.com/"
                 };
                 const projectTwo = {
                     title: "Express.gym",
                     image: "../images/express-gym.png",
-                    stack: "Handlebars, express.js, node.js",
+                    stack: "Handlebars, express.js, node.js, sequelize",
                     repo: "https://github.com/nicoledodge/express.gym",
                     deployed: "https://express-gym.herokuapp.com/"
                 };
