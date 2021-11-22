@@ -1,0 +1,40 @@
+.proficiency-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    box-shadow: 0.05rem 0.15rem 5px black;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #f2f8f9;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.resume {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.resume:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19), inset 0 0 16px 10px rgb(107, 228, 250);
+}
+
+@media screen and (min-width: 1100px) {
+    .proficiency-wrapper {
+        width: 50%;
+        padding: 15px;
+    }
+}
