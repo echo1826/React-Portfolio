@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 import ContactForm from "./pages/ContactForm";
 import AboutMe from "./pages/AboutMe";
+import Resume from "./pages/Resume";
 import "./styles/Header.css"
 
 
@@ -74,6 +75,9 @@ function Header() {
             }
             case "Contact Me": {
                 return (<ContactForm />);
+            }
+            case "Resume": {
+                return (<Resume />);
             }
             default: {
                 console.log("Something went wrong");
