@@ -14,7 +14,6 @@ function Project({project}) {
                     <p className="github-button">Github Repo</p>
                 </a>  
             </div>
-            
          </li>
     )
 }

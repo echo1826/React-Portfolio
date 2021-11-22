@@ -4,7 +4,7 @@ import "../styles/Resume.css";
 function Resume() {
     return(
         <div style={{textAlign: "center"}}>
-            <a className="resume" href="./images/Resume.pdf" download><i className="far fa-file"></i> Download my Resume here</a>
+            <a className="resume" href="./images/Resume.pdf" target="_blank" rel="noreferrer"><i className="far fa-file"></i> Download my Resume here</a>
             <h3 style={{fontSize: 30}}>Frontend:</h3>
             <ul className="proficiency-wrapper">
                 <li>
