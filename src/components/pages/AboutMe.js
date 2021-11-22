@@ -9,9 +9,9 @@ function AboutMe() {
         API.search(query).then((res) => {setGif(res)}).catch((err) => console.log(err));
     }
 
-    useEffect(()=> {
-        searchGif('kittens');
-    }, []);
+    // useEffect(()=> {
+    //     searchGif('kittens');
+    // }, []);
 
     // console.log(gif);
     let { data } = gif;
@@ -19,7 +19,7 @@ function AboutMe() {
 
     return(
         <div className="backgroundColor">
-            <img />
+            {/* <img /> */}
             <h2 className="title">About Me</h2>
             {/* profile pic goes here */}
             <article className="article">
