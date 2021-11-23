@@ -3,9 +3,9 @@ import "./styles/Footer.css";
 
 function Footer() {
     return(
-        <footer style={{margin: 40}}>
-            <nav>
-                <ul className="footerNavbar">
+        <footer>
+            <nav >
+                <ul style={{margin: 40, position: "relative", bottom: 0}} className="footerNavbar">
                     <li>
                         <a className="footerLink" href="https://github.com/echo1826" target="_blank" rel="noreferrer"><i className="fab fa-github fa-5x footerIcon"></i></a>
                     </li>
