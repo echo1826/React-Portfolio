@@ -39,7 +39,7 @@ function Header() {
                     image: "./images/mafia-tracker.PNG",
                     stack: "mySQL, node.js, express.js",
                     repo: 'https://github.com/echo1826/Mafia-Employee-Tracker',
-                    deployed: "#"
+                    deployed: "https://watch.screencastify.com/v/f5uqZP3bk0R7u0S3FCI8"
                 };
                 const projectFour = {
                     title: "National Parks Wildfire Tracker",
@@ -63,14 +63,18 @@ function Header() {
                     deployed: "https://echo1826.github.io/Weather-Checker/"
                 };
                 return(
-                    <ul className="card-wrapper">
-                        <Project project={projectOne}/>
-                        <Project project={projectTwo}/>
-                        <Project project={projectThree}/>
-                        <Project project={projectFour}/>
-                        <Project project={projectFive}/>
-                        <Project project={projectSix}/>
-                    </ul>
+                    <div>
+                        <h3 style={{marginLeft: "2%"}}>Click the images to see the application in action!</h3>
+                        <ul className="card-wrapper">
+                            <Project project={projectOne}/>
+                            <Project project={projectTwo}/>
+                            <Project project={projectThree}/>
+                            <Project project={projectFour}/>
+                            <Project project={projectFive}/>
+                            <Project project={projectSix}/>
+                        </ul>
+                    </div>
+                    
                 );
             }
             case "Contact Me": {

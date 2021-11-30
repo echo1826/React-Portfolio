@@ -12,9 +12,8 @@ function ContactForm() {
     const [submitted, setSubmitted] = useState(false);
 
     const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
+        const inputType = e.target.name;
+        const inputValue = e.target.value;
 
         if(inputType === "name") {
             setName(inputValue);
