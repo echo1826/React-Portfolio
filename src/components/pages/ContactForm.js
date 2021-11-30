@@ -24,21 +24,32 @@ function ContactForm() {
         }
     }
 
+    const handleBlurShittyInput = (e) => {
+        // console.log("Blur event");
+        // console.log(e.target);
+        e.preventDefault();
+        const inputType = e.target.name;
+        // console.log(inputType);
+        setTimeout(() => {
+            if(name === "" && inputType ==="name") {
+                setError(true);
+                setErrorMessage("Name field is required!");
+                return;
+            }else if(!validateEmail(email) && inputType === "email") {
+                setError(true);
+                setErrorMessage("Invalid email!");
+                return;
+            }else if(message === "" && inputType === "message") {
+                setError(true);
+                setErrorMessage("Message field is required!");
+                return;
+            }
+        }, 1000)
+        
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!name) {
-            setError(true);
-            setErrorMessage("Name field is required!");
-            return;
-        }else if(!validateEmail(email)) {
-            setError(true);
-            setErrorMessage("Invalid email submitted!");
-            return;
-        }else if(!message) {
-            setError(true);
-            setErrorMessage("Message field is required!");
-            return;
-        }
         setName("");
         setEmail("");
         setMessage("");
@@ -54,17 +65,17 @@ function ContactForm() {
     const handleSubmitClose = () => {
         setSubmitted(false);
     }
-    console.log("errormessage", errorMessage,"name",  name, "email", email,"message", message);
+    // console.log("errormessage", errorMessage,"name",  name, "email", email,"message", message);
     return(
         <div className="container">
             <form>
                 <h2 style={{marginBottom: 20, fontSize: 40}}>Contact Me</h2>
                 <label style={{fontSize: 20}} htmlFor="name">Name:</label>
-                <input className="inputStyling" id="name" name="name" type="text" placeholder="Name" value={name} onChange={handleInputChange}></input>
+                <input className="inputStyling" id="name" name="name" type="text" placeholder="Name" value={name} onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
                 <label style={{fontSize: 20}} htmlFor="email" value={email}>Email:</label>
-                <input className="inputStyling" id="email" name="email" type="text" placeholder="Email" onChange={handleInputChange}></input>
+                <input className="inputStyling" id="email" name="email" type="text" placeholder="Email" onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
                 <label style={{fontSize: 20}} htmlFor="message">Message:</label>
-                <textarea className="inputStyling" id="message" name="message" placeholder="Message" value={message} style={{height:300}} onChange={handleInputChange}></textarea>
+                <textarea className="inputStyling" id="message" name="message" placeholder="Message" value={message} style={{height:300}} onChange={handleInputChange} onBlur={handleBlurShittyInput}></textarea>
                 <button className="button" type="submit" onClick={handleSubmit}>Submit</button>
             </form>
             <Snackbar open={error} autoHideDuration={6000} onClose={handleErrorClose}>
