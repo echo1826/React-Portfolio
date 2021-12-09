@@ -20,7 +20,15 @@ function Header() {
             }
             case "Projects": {
                 // pass props that give the project data, title, image, technologies used?
-                const projects = [{
+                const projects = [
+                {
+                    title: "Sheltr",
+                    image: "./images/sheltr.PNG",
+                    stack: "MERN stack with GraphQL",
+                    repo: "https://github.com/echo1826/sheltr",
+                    deployed: "https://sheltr-app.herokuapp.com/"
+                },
+                {
                     title: "Tech Blog",
                     image: "./images/tech-blog.png",
                     stack: "Handlebars, express.js, node.js, sequelize",
@@ -54,13 +62,6 @@ function Header() {
                     stack: "HTML, mongoDB, node.js, express.js",
                     repo: "https://github.com/echo1826/Fitness-Tracker",
                     deployed: "https://ec-fitness-tracker.herokuapp.com/?id=6192c8bdb3399b7d14624dbc"
-                },
-                {
-                    title: "Weather Tracker",
-                    image: "./images/weather-app.png",
-                    stack: "HTML, CSS, JavaScript, jQuery",
-                    repo: "https://github.com/echo1826/Weather-Checker",
-                    deployed: "https://echo1826.github.io/Weather-Checker/"
                 }
                 ]
                 return(

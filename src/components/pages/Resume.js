@@ -43,6 +43,9 @@ function Resume() {
                 <li>
                     Mongoose
                 </li>
+                <li>
+                    GraphQL
+                </li>
             </ul>
         </div>
     )
