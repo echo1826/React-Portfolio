@@ -23,7 +23,7 @@ This repo is covered under the MIT License.
 
 # Deployment
 
-Deployed at: <https://ec-react-portfolio.netlify.app/> 
+Deployed at: <https://ethan-cho.netlify.app//> 
 
 # Contributing
 
