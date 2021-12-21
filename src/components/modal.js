@@ -14,6 +14,5 @@ export default function modal(props) {
                 </div>
             </div>
         </div>
-        
     )
 }
