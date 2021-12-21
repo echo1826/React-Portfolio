@@ -1,7 +1,18 @@
 import React from "react";
 import "../styles/Project.css";
+import Modal from '../modal';
 
 function Project({project}) {
+    const [modalOpen, setModalOpen] = React.useState(true);
+    const handleModalOpen = (e) => {
+        e.preventDefault();
+        if(!modalOpen) {
+            setModalOpen(true);
+        }else {
+            setModalOpen(false);
+        }
+    }
+
     return(
         <li className="card">
             <a href={project.deployed} style={{textDecoration: "none", color: "black"}} target="_blank" rel="noreferrer">
@@ -9,7 +20,11 @@ function Project({project}) {
             </a>
             <div className="card-body">
                 <h3 style={{marginTop: "1rem", fontSize: "1.25rem"}}>{project.title}</h3>
-                <p>{project.stack}</p>
+                <p style={{fontWeight: "bolder"}}>{project.stack}</p>
+                <button onClick={handleModalOpen}>Click for description</button>
+                <div className={modalOpen ? "" : "modal-background"}>
+                    {modalOpen ? <React.Fragment></React.Fragment> : <Modal handleModalOpen={handleModalOpen} projectDescription={project.description} projectTitle={project.title}></Modal>}
+                </div>
                 <a href={project.repo} target="_blank" rel="noreferrer">
                     <p className="github-button">Github Repo</p>
                 </a>  

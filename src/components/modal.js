@@ -1,0 +1,19 @@
+import React from 'react';
+import './styles/Modal.css';
+
+export default function modal(props) {
+    return(
+        <div className='modal'>
+            <div className='modal-card'>
+                <div className='modal-title'>
+                    <h2>{props.projectTitle}</h2>
+                </div>
+                <div className='modal-body'>
+                    <p>{props.projectDescription}</p>
+                    <button onClick={props.handleModalOpen}>Close</button>
+                </div>
+            </div>
+        </div>
+        
+    )
+}

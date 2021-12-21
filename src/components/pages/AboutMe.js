@@ -21,7 +21,7 @@ function AboutMe() {
         <div className="backgroundColor">
             <h2 className="title">About Me</h2>
             {/* profile pic goes here */}
-            <img style={{height:"15rem", borderRadius: "2rem", marginLeft:"2%", boxShadow:"0.2rem 0.2rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45)"}} src="./images/IMG_1105.JPG" />
+            <img style={{height:"15rem", borderRadius: "2rem", marginLeft:"2%", boxShadow:"0.2rem 0.2rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45)"}} alt="Ethan Cho" src="./images/IMG_1105.JPG" />
             <article className="article">
                 <p>
                     Hi, my name is Ethan Cho and I am a recently graduated fullstack web developer from the University of Texas At Austin Fullstack Coding Bootcamp. Hobbies that I enjoy during my free time includes tennis, reading, listening to K-pop, keyboard building, and computer building. I am proficient in JavaScript with some basic knowledge of C++. The technologies I am proficient in are react.js, node.js, express.js, bootstrap, mySQL, mongoDB, sequelize, and mongoose.

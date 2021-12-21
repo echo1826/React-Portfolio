@@ -1,10 +1,10 @@
 .card {
     border-radius: 0.5rem;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-    padding-bottom: 1rem;
+    /* padding-bottom: 2rem; */
     overflow: hidden;
-    width: 90vh;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin-top: 30px;
     justify-self: center;
 }
@@ -33,7 +33,7 @@
 }
 
 .github-button {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     position: relative;
     background-color: #008CBA;
     border: none;
@@ -54,6 +54,5 @@
     .card {
         width: 40vh;
         height: 350px;
-        /* margin-top: 30px; */
     }
 }
