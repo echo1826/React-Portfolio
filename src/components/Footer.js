@@ -4,7 +4,7 @@ import "./styles/Footer.css";
 function Footer() {
     return(
         <footer>
-            <h2 style={{textAlign: "center", fontSize: "20px", marginTop: '20px'}}>Check out my socials, or email me here!</h2>
+            <h2 style={{textAlign: "center", fontSize: "20px", marginTop: '20px'}}>Check out my socials, or email ethanjoshuacho@gmail.com</h2>
             <nav >
                 <ul style={{margin: 40, position: "relative", bottom: 0}} className="footerNavbar">
                     <li>
