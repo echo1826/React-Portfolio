@@ -25,3 +25,14 @@
     padding-left: 20px;
     line-height: 2;
 }
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutMeSection {
+        flex-direction: column;
+    }
+}
