@@ -21,7 +21,7 @@ function Project({project}) {
             <div className="card-body">
                 <h3 style={{marginTop: "1rem", fontSize: "1.25rem"}}>{project.title}</h3>
                 <p style={{fontWeight: "bolder"}}>{project.stack}</p>
-                <button onClick={handleModalOpen}>Click for description</button>
+                <button onClick={handleModalOpen} className="modal-button">Description</button>
                 <div className={modalOpen ? "" : "modal-background"}>
                     {modalOpen ? <React.Fragment></React.Fragment> : <Modal handleModalOpen={handleModalOpen} projectDescription={project.description} projectTitle={project.title}></Modal>}
                 </div>

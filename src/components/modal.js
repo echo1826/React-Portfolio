@@ -10,7 +10,7 @@ export default function modal(props) {
                 </div>
                 <div className='modal-body'>
                     <p>{props.projectDescription}</p>
-                    <button onClick={props.handleModalOpen}>Close</button>
+                    <button className='close-button' onClick={props.handleModalOpen}>Close</button>
                 </div>
             </div>
         </div>

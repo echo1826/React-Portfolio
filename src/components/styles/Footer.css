@@ -14,5 +14,6 @@
 }
 
 .footerIcon:hover {
-    color: #6FFFE9
+    color: #6FFFE9;
+    transition: color 0.7s;
 }
