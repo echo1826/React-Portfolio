@@ -18,8 +18,9 @@ function AboutMe() {
                     </p>
                     <br/>
                     <p>
-                        Software development intrigued me when I began to build computers and started diving into the world of tech when I graduated high school. Eventually as I started to become more comfortable with computer hardware, as I researched more for building computers, I became interested in learning about software on a computer. So I self-taught myself the basics of programming in C++, and enrolled in a coding bootcamp in order to learn more about developing applications. I am proficient in JavaScript with some basic knowledge of C++. The technologies I am proficient in are react.js, node.js, express.js, bootstrap, mySQL, mongoDB, sequelize, and mongoose.
+                        Full-Stack Developer and bootcamp graduate from the University of Texas at Austin; certified in JavaScript, CSS, HTML5, and the MERN stack. Recognized as an inventive problem-solver with an intense drive to learn new technologies and concepts. Keen knowledge on applying aspects of agile development and effective, efficient solutions. Worked on a team of five to develop a MERN application that helps local future pet adopters to view, save, and filter out current dogs up for adoption in local shelters in their area. Exhilarated to use the advantage of being a part of a fast-paced, quality-driven environment to help build solutions to practical problems experienced by everyday users.
                     </p>
+                    
                 </article>
             </div>
             
