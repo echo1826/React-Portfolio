@@ -14,7 +14,7 @@ function AboutMe() {
                 {/* profile pic goes here */}
                 <article className="article">
                     <p>
-                        Hi, my name is Ethan Cho and I am a recently graduated fullstack web developer from the University of Texas At Austin Fullstack Coding Bootcamp. Hobbies that I enjoy during my free time includes tennis, reading, listening to K-pop, keyboard building, and computer building.
+                        Hi, my name is Ethan Cho and I am a tutor and teaching asssistant for the Web Development Boot Camp at the University of Texas at Austin. Hobbies that I enjoy during my free time includes tennis, reading, listening to K-pop, keyboard building, and computer building.
                     </p>
                     <br/>
                     <p>
