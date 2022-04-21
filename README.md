@@ -16,6 +16,8 @@
 
 This is my portfolio made out of react. It includes an about me, a projects section that displays my projects, a contact me section where people can message me, and a resume section that lists my proficiencies and a button to download my resume. It also includes a footer that sends users to my github profile, linkedIn profile, and stack overflow profile.
 
+![Home Page](./public/images/home-screen.PNG)
+
 # License
 
 This repo is covered under the MIT License.
