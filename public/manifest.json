@@ -2,7 +2,11 @@
   "short_name": "Portfolio",
   "name": "React Portfolio",
   "icons": [
-    
+    {
+      "src": "/images/portfolio-briefcase.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
