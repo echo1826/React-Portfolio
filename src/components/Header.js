@@ -47,13 +47,13 @@ function Header() {
                             "A fullstack application that enable users to post blog threads, and comment on those threads about anything",
                     },
                     {
-                        title: "Express.gym",
-                        image: "../images/express-gym.png",
-                        stack: "Handlebars, express.js, node.js, sequelize",
-                        repo: "https://github.com/nicoledodge/express.gym",
-                        deployed: "https://express-gym.herokuapp.com/",
+                        title: "kickstarter",
+                        image: "../images/kickstarter.PNG",
+                        stack: "Next.js, semantic-ui, web3, Solidity, infura, MetaMask",
+                        repo: "https://github.com/echo1826/kickstarter-nextjs",
+                        deployed: "https://github.com/echo1826/kickstarter-nextjs",
                         description:
-                            "An application that emulates what a local gym website could look like and function like, includes functionality to sign in with a membership as well as sign up for classes",
+                            "A web3 platform for tracking kickstarter campaigns on the Ethereum network. You can deploy a kickstarter campaign onto the network and people can contribute to the campaign using ether",
                     },
                     {
                         title: "Mafia Employee Tracker backend",
