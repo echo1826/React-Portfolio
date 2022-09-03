@@ -2,16 +2,16 @@ import React from "react";
 import "../styles/Project.css";
 import Modal from '../modal';
 
-function Project({project}) {
-    const [modalOpen, setModalOpen] = React.useState(true);
-    const handleModalOpen = (e) => {
-        e.preventDefault();
-        if(!modalOpen) {
-            setModalOpen(true);
-        }else {
-            setModalOpen(false);
-        }
-    }
+function Project({project, modalOpen, handleModalOpen}) {
+    // const [modalOpen, setModalOpen] = React.useState(true);
+    // const handleModalOpen = (e) => {
+    //     e.preventDefault();
+    //     if(!modalOpen) {
+    //         setModalOpen(true);
+    //     }else {
+    //         setModalOpen(false);
+    //     }
+    // }
 
     return(
         <li className="card">
