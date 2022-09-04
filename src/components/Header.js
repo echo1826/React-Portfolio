@@ -49,7 +49,7 @@ function Header() {
                     {
                         title: "kickstarter",
                         image: "../images/kickstarter.PNG",
-                        stack: "Next.js, semantic-ui, web3, Solidity, infura, MetaMask",
+                        stack: "Next.js, semantic-ui, web3, Solidity, infura",
                         repo: "https://github.com/echo1826/kickstarter-nextjs",
                         deployed: "https://github.com/echo1826/kickstarter-nextjs",
                         description:
