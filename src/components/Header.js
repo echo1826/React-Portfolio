@@ -9,13 +9,22 @@ import "./styles/Header.css";
 
 function Header() {
     const [currentPage, setCurrentPage] = useState("About Me");
-    const [modalOpen, setModalOpen] = React.useState(true);
+    const [modalOpen, setModalOpen] = useState({
+        0: false,
+        1: false,
+        2: false,
+        3: false,
+        4: false,
+        5: false,
+    });
     const handleModalOpen = (e) => {
         e.preventDefault();
-        if (!modalOpen) {
-            setModalOpen(true);
+        const id = e.target.getAttribute("id");
+        console.log(id);
+        if (!modalOpen[id]) {
+            setModalOpen({ ...modalOpen, [id]: true });
         } else {
-            setModalOpen(false);
+            setModalOpen({ ...modalOpen, [id]: false });
         }
     };
 
@@ -51,7 +60,8 @@ function Header() {
                         image: "../images/kickstarter.PNG",
                         stack: "Next.js, semantic-ui, web3, Solidity, infura",
                         repo: "https://github.com/echo1826/kickstarter-nextjs",
-                        deployed: "https://github.com/echo1826/kickstarter-nextjs",
+                        deployed:
+                            "https://github.com/echo1826/kickstarter-nextjs",
                         description:
                             "A web3 platform for tracking kickstarter campaigns on the Ethereum network. You can deploy a kickstarter campaign onto the network and people can contribute to the campaign using ether",
                     },
@@ -92,12 +102,13 @@ function Header() {
                             Click the images to see the application in action!
                         </h3>
                         <ul className="card-wrapper">
-                            {projects.map((project) => {
+                            {projects.map((project, i) => {
                                 return (
                                     <Project
                                         project={project}
                                         modalOpen={modalOpen}
                                         handleModalOpen={handleModalOpen}
+                                        cardNumber={i}
                                     />
                                 );
                             })}

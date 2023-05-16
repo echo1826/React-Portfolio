@@ -1,18 +1,29 @@
-import React from 'react';
-import './styles/Modal.css';
+import React from "react";
+import "./styles/Modal.css";
 
-export default function modal(props) {
-    return(
-        <div className='modal'>
-            <div className='modal-card'>
-                <div className='modal-title'>
-                    <h2>{props.projectTitle}</h2>
+export default function modal({
+    projectTitle,
+    projectDescription,
+    cardNumber,
+    handleModalOpen,
+}) {
+    return (
+        <div className="modal">
+            <div className="modal-card">
+                <div className="modal-title">
+                    <h2>{projectTitle}</h2>
                 </div>
-                <div className='modal-body'>
-                    <p>{props.projectDescription}</p>
-                    <button className='close-button' onClick={props.handleModalOpen}>Close</button>
+                <div className="modal-body">
+                    <p>{projectDescription}</p>
+                    <button
+                        className="close-button"
+                        id={cardNumber}
+                        onClick={handleModalOpen}
+                    >
+                        Close
+                    </button>
                 </div>
             </div>
         </div>
-    )
+    );
 }
